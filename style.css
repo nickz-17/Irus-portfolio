@@ -1,40 +1,29 @@
-/* Algemene stijl */
 body {
-    background-color: #FBCFE0; /* De roze kleur uit je voorbeeld */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8C8DC; /* Zachtroze achtergrond */
     margin: 0;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
-.container {
-    text-align: center;
+.main-container {
     position: relative;
     width: 100%;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 500px;
+    padding-top: 50px;
+    text-align: center;
 }
 
 h1 {
-    color: #5D3E8E; /* Donkerpaarse titel */
-    font-size: 2.5rem;
+    color: #4A3080; /* Donkerpaarse kleur voor de tekst */
+    font-size: 2.2rem;
     margin-bottom: 40px;
 }
 
-/* De illustratie linksboven */
-.main-illustration {
-    position: absolute;
-    left: -100px;
-    top: -50px;
-    width: 250px;
-    z-index: -1;
-}
-
-/* Knoppen menu */
-.button-menu {
+/* De knoppen */
+.menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -42,29 +31,43 @@ h1 {
 }
 
 .btn {
-    background-color: #B298F0; /* Paarse kleur van de knoppen */
+    background-color: #B298F0; /* Lichtpaars */
     color: white;
     text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 20px; /* Ronde hoeken */
-    font-size: 1.2rem;
-    display: inline-block;
-    width: fit-content;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    padding: 12px 0;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 .btn:hover {
+    background-color: #9D81E0;
     transform: scale(1.05);
-    background-color: #9A7EE0;
 }
 
-/* De posities voor het trap-effect */
-.btn-right { margin-left: 80px; }
-.btn-far-right { margin-left: 180px; }
-.btn-center { margin-left: 0; }
+/* Trap-effect posities */
+.pos-1 { transform: translateX(20px); }
+.pos-2 { transform: translateX(80px); }
+.pos-3 { transform: translateX(10px); }
+.pos-4 { transform: translateX(90px); }
+.pos-5 { margin-top: 30px; } /* Contact staat iets lager */
 
-.contact-btn {
-    margin-top: 50px;
-    background-color: #B298F0;
+/* Afbeeldingen positioneren */
+.side-image {
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    width: 150px;
+    z-index: 10;
+}
+
+.bottom-image {
+    position: absolute;
+    right: -20px;
+    bottom: 50px;
+    width: 250px;
+    opacity: 0.7;
+    z-index: -1;
 }
