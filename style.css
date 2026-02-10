@@ -190,3 +190,66 @@ h1 {
     line-height: 1.6;
     font-size: 1.1rem;
 }
+/* Styling voor de Contact pagina */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: #4A3080;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: left;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #FBCFE0;
+    border-radius: 10px;
+    font-family: inherit;
+    box-sizing: border-box; /* Zorgt dat padding de box niet breder maakt */
+}
+
+.submit-btn {
+    background-color: #B298F0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #9D81E0;
+    transform: scale(1.02);
+}
+
+.socials {
+    margin-top: 40px;
+}
+
+.insta-link {
+    color: #B298F0;
+    text-decoration: none;
+    font-weight: bold;
+}
