@@ -167,3 +167,26 @@ h1 {
         text-align: center;
     }
 }
+/* Styling voor de Opdrachten pagina */
+.assignment-block {
+    margin-bottom: 60px; /* Ruimte tussen verschillende opdrachten */
+    padding-bottom: 40px;
+    border-bottom: 2px dashed rgba(74, 48, 128, 0.2); /* Een subtiel stippellijntje tussen opdrachten */
+}
+
+.assignment-info {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #4A3080;
+}
+
+.assignment-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.assignment-info p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
