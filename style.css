@@ -118,3 +118,52 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* Styling voor de Over Mij pagina */
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.3); /* Licht transparant wit vlak */
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    color: #4A3080;
+}
+
+.about-text h1 {
+    margin-top: 0;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Mobiele aanpassing */
+@media (max-width: 600px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        text-align: center;
+    }
+}
